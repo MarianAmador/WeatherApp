@@ -62,9 +62,17 @@ class AppScaffold extends StatelessWidget {
               },
             ),
             const Divider(),
+            ListTile(
+              leading: const Icon(Icons.info_outline),
+              title: const Text('Créditos'),
+              onTap: () {
+                context.go('/creditos');
+              },
+            ),
           ],
         ),
       ),
     );
   }
 }
+         
